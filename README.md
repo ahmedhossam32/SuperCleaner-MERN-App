@@ -6,27 +6,28 @@ A complete full-stack cleaning service web application built using the MERN stac
 
 
 ## 📁 Project Structure
+
 SuperCleaner/
+├── backend/                        # Express.js backend + MongoDB
+│   ├── controllers/               # Logic for auth, booking, contact
+│   ├── middleware/                # JWT middleware
+│   ├── models/                    # User, Booking, Contact schemas
+│   ├── routes/                    # API route definitions
+│   └── server.js                  # Backend entry point
 │
-├── backend/ # Express.js backend + MongoDB
-│ ├── controllers/ # Logic for auth, booking, contact
-│ ├── middleware/ # JWT middleware
-│ ├── models/ # User, Booking, Contact schemas
-│ ├── routes/ # API route definitions
-│ └── server.js # App entry point
-│
-└── frontend/ # React.js frontend
-├── assets/ # Icons, background images
-├── components/ # Header, Footer
-├── pages/ # All user-facing pages:
-│ ├── Home
-│ ├── About Us
-│ ├── Contact Us
-│ ├── Login / Sign Up
-│ ├── Booking Form
-│ ├── Manage Booking
-│ └── Privacy Policy
-└── App.js # Routing and layout
+└── frontend/                      # React.js frontend
+    ├── assets/                   # Icons, background images
+    ├── components/               # Header, Footer
+    ├── pages/                    # All user-facing pages
+    │   ├── Home.jsx
+    │   ├── AboutUs.jsx
+    │   ├── ContactUs.jsx
+    │   ├── Login.jsx / Signup.jsx
+    │   ├── BookingForm.jsx
+    │   ├── ManageBooking.jsx
+    │   └── PrivacyPolicy.jsx
+    └── App.js                    # Routing and layout
+
 
 
 
